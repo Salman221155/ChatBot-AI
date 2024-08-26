@@ -1,0 +1,15 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "main": "bot-1.js",
+  "scripts": {
+    "bot": "node bot-1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
