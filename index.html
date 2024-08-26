@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI CHAT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="chat-container">
+      <div class="chat-header">Chat Bot Salman</div>
+      <button onclick="goToMainMenu()" class="back-button" id="back-button">
+        Kembali ke menu utama
+      </button>
+      <button id="toggle-api-button">GPT API</button>
+      <div id="chat-log" class="chat-log"></div>
+      <div class="user-input-container">
+        <input
+          type="text"
+          id="user-input"
+          class="user-input"
+          placeholder="ketik pesan...."
+        />
+        <button onclick="sendMessage()" class="send-button" id="send-button">
+          kirim
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="bot-1.js"></script>
+</html>

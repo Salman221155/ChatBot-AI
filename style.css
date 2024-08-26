@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(80, 76, 76);
+}
+
+#chat-container {
+  width: 300px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 450px;
+  background-color: #e2d5d5;
+}
+.chat-header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.user-input {
+  flex-grow: 1;
+  border: none;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.chat-log {
+  flex-grow: 1;
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.user-input-container {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+}
+
+.send-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.user-message {
+  color: #333;
+}
+
+.bot-message {
+  color: #888;
+}
+
+.message {
+  margin-bottom: 10px;
+  clear: both; /* Mencegah pesan berdempetan */
+  overflow: auto; /* Mencegah float collapse */
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  color: #000;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+  margin-left: auto;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #eaeaea;
+  color: #000;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%; /* Batasi lebar pesan agar tidak terlalu lebar */
+}
+
+.user-message .username,
+.bot-message .username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#toggle-api-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Menggeser ke ujung kanan */
+}
+
+/* Tambahkan styling untuk tombol toggle API */
+#toggle-api-button {
+  background-color: rgb(54, 177, 95);
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 215px;
+  width: 80px;
+}
+
+/* Gaya tombol saat mati */
+#toggle-api-button.off {
+  background-color: rgba(54, 17, 95, 0.2);
+  color: #000;
+}
+
+/* Efek hover saat kursor diarahkan ke tombol */
+#toggle-api-button:hover {
+  opacity: 0.8;
+}
